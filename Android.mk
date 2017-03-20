@@ -1,3 +1,3 @@
-ifneq ($(filter v1awifi,$(TARGET_DEVICE)),)
+ifneq ($(filter v1a3g,$(TARGET_DEVICE)),)
     include $(all-subdir-makefiles)
 endif

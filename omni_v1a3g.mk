@@ -20,7 +20,7 @@
 #
 
 # Inherit from those products. Most specific first.
-#$(call inherit-product, device/samsung/v1awifi/device.mk)
+#$(call inherit-product, device/samsung/v1a3g/device.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
@@ -29,8 +29,8 @@ PRODUCT_COPY_FILES := $(LOCAL_PATH)/init.recovery.universal5420.rc:root/init.rec
 	$(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_v1awifi
-PRODUCT_DEVICE := v1awifi
+PRODUCT_NAME := omni_v1a3g
+PRODUCT_DEVICE := v1a3g
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := v1awifi
+PRODUCT_MODEL := v1a3g
 
